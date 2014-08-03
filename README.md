@@ -13,12 +13,17 @@ This is the main repository that our development team will be working on for cre
   2.Make it short,clear, and to the point.
 
 #####Directory: 
-Root folder
+
+>Root folder
   
   > index.html
   
   > other pages if needed
+  
   > img [folder]
+  
   > css [folder]
+  
   > js  [folder]
+  
   > inc|php [folder]
