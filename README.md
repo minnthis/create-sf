@@ -25,4 +25,4 @@ Root folder
   
   > js  [folder]
   
-  > inc|php [folder]
+  > inc | php [folder]
