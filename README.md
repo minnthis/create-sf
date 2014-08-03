@@ -8,8 +8,9 @@ This is the main repository that our development team will be working on for cre
 
 
 #####Folder and File Naming Convention:
-  *1.No SPACE and CAPITAL in all filenames, only use DASH between words
-  *2.Make it short,clear, and to the point.
+  1.No SPACE and CAPITAL in all filenames, only use DASH between words
+  
+  2.Make it short,clear, and to the point.
 
 #####Directory: 
 Root folder
