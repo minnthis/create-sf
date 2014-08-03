@@ -14,7 +14,9 @@ This is the main repository that our development team will be working on for cre
 
 #####Directory: 
 Root folder
+  
   > index.html
+  
   > other pages if needed
   > img [folder]
   > css [folder]
