@@ -4,12 +4,12 @@ creative-sf
 This is the main repository that our development team will be working on for creativesanfrancisco project.
 
 #####Technologies:
-
-HTML/CSS, JavaScript/jQuery, PHP/MySQL
+  HTML/CSS, JavaScript/jQuery, PHP/MySQL
 
 
 #####Folder and File Naming Convention:
-- No spaces and no in filenames
+  1.No SPACES and no CAPITAL in all filenames, only use DASH between words
+  2.Make it short,clear, and to the point.
 
 #####Directory: 
 Root folder
