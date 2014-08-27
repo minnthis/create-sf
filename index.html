@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/foundation.css" />
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <link href="css/sass-compiled.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/overlay.css">
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/modernizr.js"></script>
 <script type="text/javascript" src="js/toggle.js"></script>
@@ -19,72 +20,178 @@
 
 <body>
 <div class="sticky">
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#home">Create San Francisco</a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-  <section class="top-bar-section"> 
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about" class>About</a></li>
-      <li><a href="#portfolios" class>Portfolios</a></li>
-      <li><a href="#contact" class>Contact</a></li>
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#home">Create San Francisco</a></h1>
       </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
-  </section>
-</nav>
+    <section class="top-bar-section"> 
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about" class>About</a></li>
+        <li><a href="#portfolios" class>Portfolios</a></li>
+        <li><a href="#contact" class>Contact</a></li>
+        </li>
+      </ul>
+    </section>
+  </nav>
 </div>
 <!-- home 
   ================================================== -->
 <section id="home" class="row  pagesection">
-  <div class="large-12 columns">
-   
-   </div>
+  <div class="large-12 columns"> </div>
 </section>
 
 <!-- about 
   ================================================== -->
 <section id="about" class="row  pagesection">
-  <div class="large-12 columns">
-
-    <!-- Begin of Effects -->
+  <div class="large-12 columns"> 
     
-    <section class="wrapper"> 
-      <!--Effect: Bottom to Top -->
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Glen" class="pic-image" alt="Glen"/> <span class="pic-caption bottom-to-top">
-        <h1 class=	"pic-title">Glen</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Minnie" class="pic-image" alt="Minnie"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Minnie</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Sabrina" class="pic-image" alt="Sabrina"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Sabrina</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Trevor" class="pic-image" alt="Trevor"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Trevor</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Louie" class="pic-image" alt="Louie"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Louie</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Colt" class="pic-image" alt="Colt"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Colt</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Ryan" class="pic-image" alt="Ryan"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Ryan</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Todd" class="pic-image" alt="Todd"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Todd</h1>
-        </span> </div>
-      <div class="pic"> <img src="http://placehold.it/200x150&text=Ou" class="pic-image" alt="Ou"/> <span class="pic-caption bottom-to-top">
-        <h1 class="pic-title">Ou</h1>
-        </span> </div>
+    <!--minnie's overlay effect starts -->
+    <div class="members clearfix">
+      <figure id="el-topleft" data-id="ov-topleft" class="members-el"> <img src="img/glen.gif" alt="img04"/>
+        <figcaption>
+          <h2>Glen <span>Evans</span></h2>
+          <p>Project Lead</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-topmid" data-id="ov-topmid" class="members-el"> <img src="img/minnie.gif" alt="img04"/>
+        <figcaption>
+          <h2>Minnie <span>Tantiphipop</span></h2>
+          <p>Technical Director</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-topright" data-id="ov-topright" class="members-el"> <img src="img/sabrina.gif" alt="img04"/>
+        <figcaption>
+          <h2>Sabrina <span>Do</span></h2>
+          <p>Art Director</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-midleft" data-id="ov-midleft" class="members-el"> <img src="img/trevor.gif" alt="img04"/>
+        <figcaption>
+          <h2>Trevor <span>Smith</span></h2>
+          <p>Content Editor</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-midmid" data-id="ov-midmid" class="members-el"> <img src="img/louie.gif" alt="img04"/>
+        <figcaption>
+          <h2>Louie <span>Sabado</span></h2>
+          <p>Photographer/Coder</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-midright" data-id="ov-midright" class="members-el"> <img src="img/ou.gif" alt="img04"/>
+        <figcaption>
+          <h2>Ou <span>Saeterun</span></h2>
+          <p>Coder</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-btmleft" data-id="ov-btmleft" class="members-el"> <img src="img/todd.gif" alt="img04"/>
+        <figcaption>
+          <h2>Todd <span>McCollough</span></h2>
+          <p>Designer</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-btmmid" data-id="ov-btmmid" class="members-el"> <img src="img/ryan.gif" alt="img04"/>
+        <figcaption>
+          <h2>Ryan <span>Coughlin</span></h2>
+          <p>Instructional Designer</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+      <figure id="el-btmright" data-id="ov-btmright" class="members-el"> <img src="img/colt.gif" alt="img04"/>
+        <figcaption>
+          <h2>Colt <span>Stocker</span></h2>
+          <p>Designer</p>
+          <a href="#">View more</a> </figcaption>
+      </figure>
+    </div>
+    <!--end .members clearfix--> 
+    
+    <!-- Overlay (hidden by default)----------------------------------------------->
+    <section class="overlay" id="ov-topleft">
+      <div class="wrap">
+        <h1>Section 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
     </section>
-    <!-- End of effects --> 
+    <section class="overlay" id="ov-topmid">
+      <div class="wrap">
+        <h1>Section 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
+    <section class="overlay" id="ov-topright">
+      <div class="wrap">
+        <h1>Section 3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
+    <section class="overlay" id="ov-midleft">
+      <div class="wrap">
+        <h1>Section 4</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
+    <section class="overlay" id="ov-midmid">
+      <div class="wrap">
+        <h1>Section 5</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
+    <section class="overlay" id="ov-midright">
+      <div class="wrap">
+        <h1>Section 6</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
+    <section class="overlay" id="ov-btmleft">
+      <div class="wrap">
+        <h1>Section 7</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
+    <section class="overlay" id="ov-btmmid">
+      <div class="wrap">
+        <h1>Section 8</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
+    <section class="overlay" id="ov-btmright">
+      <div class="wrap">
+        <h1>Section 9</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <button class="close"><span class="mfg-cancel"></span></button>
+    </section>
   </div>
 </section>
 <!-- end #about--> 
@@ -142,6 +249,9 @@
 <script src="js/foundation.min.js"></script> 
 <script>
       $(document).foundation();
-</script>
+</script> 
+<!-- js overlay --> 
+<script src="js/overlay/plugins.js"></script> 
+<script src="js/overlay/overlay.js"></script>
 </body>
 </html>

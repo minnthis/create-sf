@@ -1,4 +1,7 @@
-// JavaScript Document
+/******************************
+Toggle between page sections
+******************************/
+
 $(document).ready(function(e) {
 	// Navigation links
 	$(function() {

@@ -1,7 +1,200 @@
-@charset "UTF-8";
 
+/******************************
+General style
+******************************/
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .sticky {
-	position:fixed;
-	z-index:100;
-	width:100%;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* members pictures style ====== */
+.members {
+	margin:10% auto;
+	width: 100%;
+	height: 100%;
+}
+.members-el {
+	position: relative;
+	display: inline-block;
+	float: left;
+	z-index: 10;/* Placements */
+}
+.members figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	width: 33.333%;
+	height: 100%;
+	max-height: 300px;
+	background-color:#545454;
+	text-align: center;
+	cursor: pointer;
+}
+.members figure img {
+	position: relative;
+	display: block;
+	opacity: 0.8;
+}
+.members figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.members figure figcaption::before, .members figure figcaption::after {
+	pointer-events: none;
+}
+.members figure figcaption, .members figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.members figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+.members figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.members figure h2 span {
+	font-weight: 800;
+}
+.members figure h2, .members figure p {
+	margin: 0;
+}
+.members figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+/* pics hover effect  ====== */
+figure.members-el {
+	background: #545454;
+}
+figure.members-el img {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+figure.members-el:hover img {
+	opacity: 1;
+}
+figure.members-el figcaption::before, figure.members-el figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+figure.members-el figcaption::before {
+	border-top: 1px solid #545454;
+	border-bottom: 1px solid #545454;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+}
+figure.members-el figcaption::after {
+	border-right: 1px solid #545454;
+	border-left: 1px solid #545454;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0);
+}
+figure.members-el h2 {
+	padding-top: 10%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0, -20px, 0);
+	transform: translate3d(0, -20px, 0);
+}
+figure.members-el p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0, 20px, 0);
+	transform: translate3d(0, 20px, 0);
+}
+figure.members-el:hover figcaption::before, figure.members-el:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+figure.members-el:hover h2 {
+	color: #DC8C28;
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+figure.members-el:hover p {
+	color: #000;
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* Overlay effect ====== */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 9999;
+	visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+.wrap {
+	display: block;
+	width: 80%;
+	max-width: 740px;
+	margin: 120px auto 0;
+}
+.close {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+.members-el.active_reverse {
+	z-index: 11;
+	background: #545454;
+}
+.members-el.inactive {
+	pointer-events: none;
+	cursor: default;
 }
